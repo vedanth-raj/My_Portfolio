@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+
+  <meta
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    name="viewport"
+  />
+
+  <title>Vedanth Raj | Full-Stack Developer & AI/ML Developer</title>
+
+  <meta property="og:title" content="Vedanth Raj | Full-Stack Developer & AI/ML Developer" />
+
+  <meta property="og:locale" content="en_US" />
+
+  <link
+    rel="canonical"
+    href="//"
+  />
+
+  <meta
+    property="og:url"
+    content="//"
+  />
+
+  <meta
+    name="description"
+    content="B.Tech CSE (Data Science) student passionate about AI, Machine Learning, Cloud Computing, and Full-Stack Development. Experienced in building AI-driven applications and scalable cloud solutions using AWS."
+  />
+
+  <link rel="icon" type="image/png" href="/assets/img/favicon.png" />
+
+  <meta name="theme-color" content="#5540af" />
+
+  <meta property="og:site_name" content="Vedanth Raj Portfolio" />
+
+  <meta property="og:image" content="//assets/img/social.jpg" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <meta name="twitter:site" content="@vedanthraj" />
+
+  <link
+    crossorigin="crossorigin"
+    href="https://fonts.gstatic.com"
+    rel="preconnect"
+  />
+
+  <link
+    as="style"
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Raleway:wght@400;500;600;700&display=swap"
+    rel="preload"
+  />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Raleway:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link
+    href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+    rel="stylesheet"
+  />
+
+  <link
+    crossorigin="anonymous"
+    href="/assets/styles/main.min.css"
+    media="screen"
+    rel="stylesheet"
+  />
+  
+  <script
+    defer
+    src="https://unpkg.com/@alpine-collective/toolkit@1.0.0/dist/cdn.min.js"
+  ></script>
+
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+  
+</head>
+
+
+  <body
+    :class="{ 'overflow-hidden max-h-screen': mobileMenu }"
+    class="relative"
+    x-data="{ mobileMenu: false }"
+  >
+    
+    <div id="main" class="relative">
+      <div
+  x-data="{
+    triggerNavItem(id) {
+        $scroll(id)
+    },
+    triggerMobileNavItem(id) {
+        mobileMenu = false;
+        this.triggerNavItem(id)
+    }
+}"
+>
+  <div class="w-full z-50 top-0 py-3 sm:py-5  absolute
+  ">
+  <div class="container flex items-center justify-between">
+    <div>
+      <a href="/" class="font-header text-2xl font-bold text-white">
+        Vedanth Raj
+      </a>
+    </div>
+    <div class="hidden lg:block">
+      <ul class="flex items-center">
+        
+        <li class="group pl-6">
+          
+          <span
+            @click="triggerNavItem('#about')"
+            class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
+            >About</span
+          >
+          
+          <span
+            class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"
+          ></span>
+        </li>
+        
+        <li class="group pl-6">
+          
+          <span
+            @click="triggerNavItem('#services')"
+            class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
+            >Services</span
+          >
+          
+          <span
+            class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"
+          ></span>
+        </li>
+        
+        <li class="group pl-6">
+          
+          <span
+            @click="triggerNavItem('#portfolio')"
+            class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
+            >Portfolio</span
+          >
+          
+          <span
+            class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"
+          ></span>
+        </li>
+        
+        <li class="group pl-6">
+          
+          <span
+            @click="triggerNavItem('#clients')"
+            class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
+            >Clients</span
+          >
+          
+          <span
+            class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"
+          ></span>
+        </li>
+        
+        <li class="group pl-6">
+          
+          <span
+            @click="triggerNavItem('#work')"
+            class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
+            >Work</span
+          >
+          
+          <span
+            class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"
+          ></span>
+        </li>
+        
+        <li class="group pl-6">
+          
+          <span
+            @click="triggerNavItem('#statistics')"
+            class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
+            >Statistics</span
+          >
+          
+          <span
+            class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"
+          ></span>
+        </li>
+        
+        <li class="group pl-6">
+          
+          <span
+            @click="triggerNavItem('#blog')"
+            class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
+            >Blog</span
+          >
+          
+          <span
+            class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"
+          ></span>
+        </li>
+        
+        <li class="group pl-6">
+          
+          <span
+            @click="triggerNavItem('#contact')"
+            class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
+            >Contact</span
+          >
+          
+          <span
+            class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"
+          ></span>
+        </li>
+        
+      </ul>
+    </div>
+    <div class="block lg:hidden">
+      <button @click="mobileMenu = true">
+        <i class="bx bx-menu text-4xl text-white"></i>
+      </button>
+    </div>
+  </div>
+</div>
+
+<div
+  class="pointer-events-none fixed inset-0 z-70 min-h-screen bg-black bg-opacity-70 opacity-0 transition-opacity lg:hidden"
+  :class="{ 'opacity-100 pointer-events-auto': mobileMenu }"
+>
+  <div
+    class="absolute right-0 min-h-screen w-2/3 bg-primary py-4 px-8 shadow md:w-1/3"
+  >
+    <button
+      class="absolute top-0 right-0 mt-4 mr-4"
+      @click="mobileMenu = false"
+    >
+      <img src="/assets/img/icon-close.svg" class="h-10 w-auto" alt="" />
+    </button>
+
+    <ul class="mt-8 flex flex-col">
+      
+      <li class="py-2">
+        
+        <span
+          @click="triggerMobileNavItem('#about')"
+          class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
+          >About</span
+        >
+        
+      </li>
+      
+      <li class="py-2">
+        
+        <span
+          @click="triggerMobileNavItem('#services')"
+          class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
+          >Services</span
+        >
+        
+      </li>
+      
+      <li class="py-2">
+        
+        <span
+          @click="triggerMobileNavItem('#portfolio')"
+          class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
+          >Portfolio</span
+        >
+        
+      </li>
+      
+      <li class="py-2">
+        
+        <span
+          @click="triggerMobileNavItem('#clients')"
+          class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
+          >Clients</span
+        >
+        
+      </li>
+      
+      <li class="py-2">
+        
+        <span
+          @click="triggerMobileNavItem('#work')"
+          class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
+          >Work</span
+        >
+        
+      </li>
+      
+      <li class="py-2">
+        
+        <span
+          @click="triggerMobileNavItem('#statistics')"
+          class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
+          >Statistics</span
+        >
+        
+      </li>
+      
+      <li class="py-2">
+        
+        <span
+          @click="triggerMobileNavItem('#blog')"
+          class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
+          >Blog</span
+        >
+        
+      </li>
+      
+      <li class="py-2">
+        
+        <span
+          @click="triggerMobileNavItem('#contact')"
+          class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
+          >Contact</span
+        >
+        
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+
+      <div><div
+  class="relative bg-cover bg-center bg-no-repeat py-8"
+  style="background-image: url(/assets/img/bg-hero.jpg)"
+>
+  <div
+    class="absolute inset-0 z-20 bg-gradient-to-r from-hero-gradient-from to-hero-gradient-to bg-cover bg-center bg-no-repeat"
+  ></div>
+
+  <div
+    class="container relative z-30 pt-20 pb-12 sm:pt-40 sm:pb-32 lg:pt-48 lg:pb-40"
+  >
+    <div class="flex flex-col items-center justify-center gap-8 lg:flex-row lg:gap-12">
+      <div class="flex-shrink-0">
+        <div class="rounded-full border-8 border-yellow shadow-2xl">
+          <img
+            src="/assets/img/blog-author.jpg"
+            class="h-40 rounded-full sm:h-48 md:h-56"
+            alt="Vedanth Raj"
+          />
+        </div>
+      </div>
+      <div class="flex-1 text-center lg:text-left">
+        <div class="mb-2 inline-block rounded-full bg-yellow bg-opacity-20 px-4 py-1 text-sm font-semibold text-yellow lg:inline-block">
+          B.Tech CSE (Data Science)
+        </div>
+        <h1
+          class="pt-4 font-header text-3xl font-bold text-white sm:text-4xl md:text-5xl lg:text-6xl"
+        >
+          Vedanth Raj
+        </h1>
+        <p class="pt-3 font-body text-lg text-grey-50 sm:text-xl">
+          Full-Stack Developer | AI/ML Enthusiast | Cloud Architect
+        </p>
+        <p class="pt-4 font-body text-base leading-relaxed text-grey-50 sm:text-lg">
+          Passionate about building AI-driven applications and scalable cloud solutions. Experienced with AWS, Machine Learning, and Full-Stack Development.
+        </p>
+        <div class="flex flex-col justify-center gap-4 pt-6 sm:flex-row lg:justify-start">
+          <a href="tel:+918897128321" class="inline-flex items-center justify-center gap-2 rounded-lg bg-yellow px-6 py-3 font-semibold text-primary transition-all hover:bg-white hover:shadow-lg">
+            <i class="bx bx-phone text-xl"></i>
+            <span class="hidden sm:inline">+91 8897128321</span>
+            <span class="sm:hidden">Call Me</span>
+          </a>
+          <a href="mailto:pvvraj1234433@gmail.com" class="inline-flex items-center justify-center gap-2 rounded-lg border-2 border-yellow px-6 py-3 font-semibold text-yellow transition-all hover:bg-yellow hover:text-primary">
+            <i class="bx bx-envelope text-xl"></i>
+            <span class="hidden sm:inline">Get in Touch</span>
+            <span class="sm:hidden">Email</span>
+          </a>
+        </div>
+        <div class="flex items-center justify-center gap-4 pt-6 lg:justify-start">
+          <a href="https://linkedin.com/in/vedanth-raj" target="_blank" rel="noopener noreferrer" class="text-2xl text-white transition-colors hover:text-yellow">
+            <i class="bx bxl-linkedin-square"></i>
+          </a>
+          <a href="https://github.com/vedanth-raj" target="_blank" rel="noopener noreferrer" class="text-2xl text-white transition-colors hover:text-yellow">
+            <i class="bx bxl-github"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="bg-grey-50" id="about">
+  <div class="container flex flex-col items-center py-16 md:py-20 lg:flex-row">
+    <div class="w-full text-center sm:w-3/4 lg:w-3/5 lg:text-left">
+      <h2
+        class="font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl"
+      >
+        About Me
+      </h2>
+      <h4
+        class="pt-6 font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl"
+      >
+        B.Tech CSE (Data Science) Student at SVKM's NMIMS University
+      </h4>
+      <p class="pt-6 font-body leading-relaxed text-grey-20">
+        I'm a passionate developer and AI/ML enthusiast with hands-on experience in building scalable cloud solutions using AWS. Currently pursuing B.Tech in Computer Science (Data Science) with a focus on AI, Machine Learning, and Full-Stack Development. I have led large-scale tech events and managed teams, combining technical expertise with strong leadership skills.
+      </p>
+      <div class="pt-6">
+        <h5 class="font-header text-lg font-semibold text-primary">Career Objective</h5>
+        <p class="pt-3 font-body text-grey-20">
+          Seeking opportunities to build impactful and innovative solutions that leverage AI, cloud computing, and full-stack development to solve real-world problems.
+        </p>
+      </div>
+      <div
+        class="flex flex-col justify-center gap-4 pt-6 sm:flex-row lg:justify-start"
+      >
+        <a href="https://linkedin.com/in/vedanth-raj" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 font-body text-lg font-semibold text-primary transition-colors hover:text-yellow">
+          Connect on LinkedIn
+          <i class="bx bx-chevron-right text-2xl"></i>
+        </a>
+      </div>
+    </div>
+    <div class="w-full pl-0 pt-10 sm:w-3/4 lg:w-2/5 lg:pl-12 lg:pt-0">
+      <div class="space-y-6">
+        <div>
+          <div class="flex items-end justify-between">
+            <h4 class="font-body font-semibold uppercase text-black">Python</h4>
+            <h3 class="font-body text-3xl font-bold text-primary">90%</h3>
+          </div>
+          <div class="mt-2 h-3 w-full rounded-full bg-lila">
+            <div class="h-3 rounded-full bg-primary" style="width: 90%"></div>
+          </div>
+        </div>
+        <div>
+          <div class="flex items-end justify-between">
+            <h4 class="font-body font-semibold uppercase text-black">JavaScript & React</h4>
+            <h3 class="font-body text-3xl font-bold text-primary">85%</h3>
+          </div>
+          <div class="mt-2 h-3 w-full rounded-full bg-lila">
+            <div class="h-3 rounded-full bg-primary" style="width: 85%"></div>
+          </div>
+        </div>
+        <div>
+          <div class="flex items-end justify-between">
+            <h4 class="font-body font-semibold uppercase text-black">AWS & Cloud</h4>
+            <h3 class="font-body text-3xl font-bold text-primary">88%</h3>
+          </div>
+          <div class="mt-2 h-3 w-full rounded-full bg-lila">
+            <div class="h-3 rounded-full bg-primary" style="width: 88%"></div>
+          </div>
+        </div>
+        <div>
+          <div class="flex items-end justify-between">
+            <h4 class="font-body font-semibold uppercase text-black">Machine Learning</h4>
+            <h3 class="font-body text-3xl font-bold text-primary">82%</h3>
+          </div>
+          <div class="mt-2 h-3 w-full rounded-full bg-lila">
+            <div class="h-3 rounded-full bg-primary" style="width: 82%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+    </div>
+  </body>
+</html>
